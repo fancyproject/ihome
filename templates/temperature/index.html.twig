@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Temperatura w salonie{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Temperatura w salonie</h1>
+
+    <table cellpadding="5" border="1">
+        <thead>
+        <tr>
+            <td>Data</td>
+            <td>Wartość</td>
+        </tr>
+
+        </thead>
+        <tbody>
+        {% for item in items %}
+            <tr>
+                <td>{{ item.date|date('Y-m-d H:i:s') }}</td>
+                <td>{{ item.value }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+{% endblock %}

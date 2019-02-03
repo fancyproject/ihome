@@ -1,0 +1,7 @@
+temperatureAdd:
+    path: /temperature/add
+    controller: App\Controller\TemperatureController::add
+
+temperatureList:
+    path: /temperature
+    controller: App\Controller\TemperatureController::index
